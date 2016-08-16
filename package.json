@@ -1,0 +1,23 @@
+{
+  "name": "PP-KVS-Kryptoparty",
+  "version": "1.0.0",
+  "description": "Presentation slides for Kryptoparty at 21st Aug 2016 in Stuttgart.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ryuno-Ki/PP-KVS-Kryptoparty.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "CC-BY-SA-4.0",
+  "bugs": {
+    "url": "https://github.com/Ryuno-Ki/PP-KVS-Kryptoparty/issues"
+  },
+  "homepage": "https://github.com/Ryuno-Ki/PP-KVS-Kryptoparty#readme",
+  "dependencies": {
+    "reveal.js": "^3.3.0"
+  }
+}

@@ -1,0 +1,57 @@
+.slides {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: url("images/frontface.jpg");
+    background-origin: padding-box;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    background-size: 100% calc(100% - 110px);
+}
+
+.frontface h1 {
+    font-family: 'Bitstream Vera Sans Bold', 'Verdana Bold';
+    font-size: 1.5em;
+}
+
+.frontface h1 .main,
+.frontface h1 .sub {
+    display: inline-block;
+    color: white;
+    border: 1px solid white;
+    padding: 0.125em 0.25em;
+}
+
+.frontface h1 .main {
+    background: black;
+    transform: rotate(2deg);
+}
+
+.frontface h1 .sub {
+    background: orange;
+    transform: rotate(-4deg);
+}
+
+.reveal .logo,
+.reveal .license {
+    position: absolute;
+}
+
+.reveal .logo {
+    bottom: -15px;
+    left: 0;
+    border: 0;
+    box-shadow: none;
+    max-height: 110px;
+    width: auto;
+}
+
+.reveal .license {
+    bottom: 10px;
+    right: 120px;;
+    font-size: 0.4444em;
+}
+
+.reveal .license p {
+    margin: 0.5em 0;
+}

@@ -1,8 +1,9 @@
-.slides {
+.slide-background.frontface {
     background-attachment: scroll;
     background-clip: border-box;
     background-color: transparent;
     background-image: url("/PP-KVS-Kryptoparty/images/frontface.jpg");
+    background-image: url("/images/frontface.jpg");
     background-origin: padding-box;
     background-position: 0% 0%;
     background-repeat: no-repeat;
@@ -34,11 +35,18 @@
 
 .reveal .logo,
 .reveal .license {
+    display: block;
+    min-height: 110px;
     position: absolute;
+    top: 0;
+    margin: 0;
+    /*  20px = padding of section  */
+    /* 350px = height/2 of .slides */
+    /* 100%  = height of element   */
+    transform: translate(0%, calc(350px + 100% - 20px - 20px));
 }
 
 .reveal .logo {
-    bottom: -15px;
     left: 0;
     border: 0;
     box-shadow: none;
@@ -47,7 +55,6 @@
 }
 
 .reveal .license {
-    bottom: 10px;
     right: 120px;;
     font-size: 0.4444em;
 }

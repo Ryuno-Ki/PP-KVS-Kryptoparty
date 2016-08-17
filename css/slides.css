@@ -1,9 +1,13 @@
+@font-face {
+    font-family: "PoliticsHead";
+    src: url("../fonts/PoliticsHeadv1_9.otf") format("opentype");
+}
+
 .slide-background.frontface {
     background-attachment: scroll;
     background-clip: border-box;
     background-color: transparent;
-    background-image: url("/PP-KVS-Kryptoparty/images/frontface.jpg");
-    background-image: url("/images/frontface.jpg");
+    background-image: url("../images/frontface.jpg");
     background-origin: padding-box;
     background-position: 0% 0%;
     background-repeat: no-repeat;
@@ -11,26 +15,36 @@
 }
 
 .frontface h1 {
-    font-family: 'Bitstream Vera Sans Bold', 'Verdana Bold';
+    font-family: "PoliticsHead", "Bitstream Vera Sans Bold", "Verdana Bold";
     font-size: 1.5em;
 }
 
 .frontface h1 .main,
 .frontface h1 .sub {
     display: inline-block;
-    color: white;
-    border: 1px solid white;
+    color: #e3e8e8;
+    border: 1px solid #e3e8e8;
     padding: 0.125em 0.25em;
 }
 
 .frontface h1 .main {
-    background: black;
+    background: #000;
     transform: rotate(2deg);
 }
 
 .frontface h1 .sub {
-    background: orange;
+    background: #f80;
     transform: rotate(-4deg);
+}
+
+.omnibar-spoof img {
+    display: inline-block;
+    max-height: 500px;
+    width: auto;
+}
+
+.omnibar-spoof img:hover {
+    max-height: 100%;
 }
 
 .reveal .logo,

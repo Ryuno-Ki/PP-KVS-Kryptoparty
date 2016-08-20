@@ -41,7 +41,7 @@
                     <blockquote>1280&times;800</blockquote>
                 </section>
                 <section class="omnibar-spoof">
-                    <img src="images/Omnibar-Spoof.png" alt="Screenshot of Omnibar Spoofing" />
+                    <img data-src="images/Omnibar-Spoof.png" alt="Screenshot of Omnibar Spoofing" />
                     <p>
                         Quelle:
                         <a href="http://www.rafayhackingarticles.net/2016/08/google-chrome-firefox-address-bar.html"
@@ -50,7 +50,7 @@
                         </a>
                     </p>
                 </section>
-                <section>
+                <section data-background="images/frontface.jpg">
                     Online Banking
                     <ul>
                         <li>
@@ -65,7 +65,7 @@
                 </section>
                 <section>
                     <section>
-                        <img src="images/OpenDataCity.png" alt="Screenshot of OpenDataCity" />
+                        <img data-src="images/OpenDataCity.png" alt="Screenshot of OpenDataCity" />
                         Quelle:
                         <a href="https://apps.opendatacity.de/prism/de"
                            target="_blank">
@@ -73,7 +73,9 @@
                         </a>
                     </section>
                     <section>
-                        <iframe width="840" height="630" src="https://www.youtube.com/embed/ZtZPR-TAEZw?t=1m50s" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="840" height="630" frameborder="0"
+                                data-src="https://www.youtube.com/embed/ZtZPR-TAEZw?t=1m50s" allowfullscreen>
+                        </iframe>
                     </section>
                     <section>
                         <a href="https://www.youtube.com/watch?v=F0MdSOoHx4o">>Formulare</a>
@@ -102,7 +104,7 @@
                 </section>
                 <section class="backface">
                     <section>
-                        <img src="images/qr.png" alt="QR code to slide URL" />
+                        <img data-src="images/qr.png" alt="QR code to slide URL" />
                         <p>
                             <a href="https://ryuno-ki.github.io/PP-KVS-Kryptoparty/"
                                target="_blank">
@@ -132,6 +134,14 @@
                 width: 1280,
                 height: 800,
                 margin: 0.1,
+                dependencies: [
+                    {
+                        src: 'plugin/print-pdf/print-pdf.js', async: true,
+                        condition: function() {
+                            return location.href.indexOf('print-pdf') > -1;
+                        }
+                    },
+                ],
             });
         </script>
     </body>

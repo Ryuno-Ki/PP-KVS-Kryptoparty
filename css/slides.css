@@ -37,13 +37,13 @@
     transform: rotate(-4deg);
 }
 
-.omnibar-spoof img {
+.zoom-on-hover img {
     display: inline-block;
     max-height: 500px;
     width: auto;
 }
 
-.omnibar-spoof img:hover {
+.zoom-on-hover img:hover {
     max-height: 100%;
 }
 
@@ -75,6 +75,13 @@
 
 .reveal .license p {
     margin: 0.5em 0;
+}
+
+.reveal .qr {
+    min-height: 50%;
+    min-width: 50%;
+    height: auto;
+    width: auto;
 }
 
 .reveal .label-with-notes {

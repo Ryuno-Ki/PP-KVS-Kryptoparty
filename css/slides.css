@@ -76,3 +76,22 @@
 .reveal .license p {
     margin: 0.5em 0;
 }
+
+.reveal .label-with-notes {
+    position: absolute;
+    top: -250px;
+    right: 0;
+    font-size: 0.6667em;
+}
+
+.notes-hidden .note {
+    display: none;
+}
+
+.note {
+    color: #333;
+}
+
+.reveal .note p {
+    margin: 0.125em 0;
+}

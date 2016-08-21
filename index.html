@@ -10,7 +10,7 @@
               href="css/theme/solarized.css" />
         <link rel="stylesheet" href="css/slides.css" />
     </head>
-    <body>
+    <body class="notes-hidden">
         <div class="reveal">
             <div class="slides">
                 <section class="frontface">
@@ -39,6 +39,27 @@
                     </h1>
                     <p>21. August 2016</p>
                     <blockquote>1280&times;800</blockquote>
+                    <label for="with-notes" id="label-with-notes"
+                           class="label-with-notes">
+                        <input type="checkbox" id="with-notes" />
+                        Mit Notizen
+                    </label>
+                    <div class="note">
+                        <p>
+                            Willkommen zur Cryptoparty.
+                            Heute geht es um das Thema HTTPS.
+                        </p>
+                        <p>
+                            Die Folien findet ihr auch
+                            <a href="https://ryuno-ki.github.io/PP-KVS-Kryptoparty/"
+                               target="_blank">auf GitHub</a>.
+                            Ihr kommt über Freifunk in's Internet.
+                        </p>
+                        <p>
+                            Weil es mein 1. Vortrag auf einer Cryptoparty ist,
+                            bin ich für Feedback dankbar.
+                        </p>
+                    </div>
                 </section>
                 <section class="omnibar-spoof">
                     <img data-src="images/Omnibar-Spoof.png" alt="Screenshot of Omnibar Spoofing" />
@@ -124,25 +145,7 @@
                 </section>
             </div>
         </div>
-        <script type="text/javascript"
-                src="js/reveal.js">
-        </script>
-        <script type="text/javascript">
-            Reveal.initialize({
-                history: true,
-                slideNumber: true,
-                width: 1280,
-                height: 800,
-                margin: 0.1,
-                dependencies: [
-                    {
-                        src: 'plugin/print-pdf/print-pdf.js', async: true,
-                        condition: function() {
-                            return location.href.indexOf('print-pdf') > -1;
-                        }
-                    },
-                ],
-            });
-        </script>
+        <script type="text/javascript" src="js/reveal.js"></script>
+        <script type="text/javascript" src="js/slides.js"></script>
     </body>
 </html>

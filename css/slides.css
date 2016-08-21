@@ -95,3 +95,8 @@
 .reveal .note p {
     margin: 0.125em 0;
 }
+
+.fixme::before {
+    content: "FIXME: ";
+    color: red;
+}
